@@ -1,0 +1,146 @@
+/*  ## Colors
+
+### Primary
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+ 
+}
+
+.container {
+    height: 100vh;
+    background-color: hsla(0, 36%, 70%, 0.274);
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    grid-template-rows: 220px 1fr;
+    grid-template-areas: 
+    "logo hero"
+    "content hero";
+}
+
+.logo, .content {
+    padding-left: 35%;
+    padding-right: 22%;
+}
+
+.logo {
+    grid-area: logo;
+    padding-top: 70px;
+}
+
+.hero-image {
+    grid-area: hero;
+    background-image: url(/images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.content {
+    grid-area: content;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+h1 span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+p {
+    padding-top: 50px;
+    color: hsl(0, 36%, 70%);
+   
+    line-height: 28px;
+}
+
+form {
+    padding-top: 50px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    height: 40px;
+}
+
+button {
+    width: 70px;
+    border-radius: 30px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    height: 40px;
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .container {
+        height: 100vh;
+        width: 372px;
+        background-color: hsla(0, 36%, 70%, 0.068);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 300px 1fr;
+        grid-template-areas: 
+        "logo"
+        "hero"
+        "content";
+        margin: 0 auto;
+    }
+
+    .logo {
+       padding: 20px;
+       align-self: center;
+    }
+
+    .hero-image {
+        background-image: url(/images/hero-mobile.jpg);
+        width: 372px;
+    }
+
+    .content {
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    p {
+        padding-top: 20px;
+    }
+  
+    form {
+        padding-top: 30px;
+    }
+
+}

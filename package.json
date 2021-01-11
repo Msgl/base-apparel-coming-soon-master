@@ -1,0 +1,24 @@
+{
+  "name": "base-apparel-coming-soon-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Msgl/base-apparel-coming-soon-master.git"
+  },
+  "author": "Maria Glynou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Msgl/base-apparel-coming-soon-master/issues"
+  },
+  "homepage": "https://github.com/Msgl/base-apparel-coming-soon-master#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
