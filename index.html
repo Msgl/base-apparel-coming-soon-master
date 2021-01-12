@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-  <script src="scripts.js"></script>
+  
 
 </head>
 <body>
@@ -30,12 +30,18 @@
         <form>
           <label for="email"></label>
           <input type="email" placeholder="Email Address">
+
+          <img src="/images/icon-error.svg" class="error-icon hidden" alt="error">
+
           <button type="submit">
             <img src="images/icon-arrow.svg" alt="submit">
           </button>
+
+          <p class="error-msg hidden">Please provide a valid email</p>
         </form>
 
     </div>
   </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
