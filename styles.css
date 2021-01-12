@@ -27,6 +27,8 @@ body, button, input {
 .container {
     height: 100vh;
     background-image: url(/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 600px;
     grid-template-rows: 220px 1fr;
@@ -49,7 +51,7 @@ body, button, input {
     grid-area: hero;
     background-image: url(/images/hero-desktop.jpg);
     background-repeat: no-repeat;
-
+    background-size: cover;
 }
 
 .content {
